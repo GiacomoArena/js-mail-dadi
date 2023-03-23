@@ -76,3 +76,34 @@ const buttonCanc = document.getElementById('annulla');
   ```
 
 
+## **Dadi**  passaggi:
+-  con un input text chiedere il nome del user e salvarlo in una variabile.
+- creo due array (per l'utente e per il pc) che abbiano un valore da 1 a 6   
+
+```
+const dadoUser = ["1","2","3","4","5","6"];
+
+const dadoPc = ["1","2","3","4","5","6"];
+
+```
+.
+- creo il button con l'evenlistener che al click mi dia un estrazione casuale del valore del mio arrayuser e del mio arraypc con allegato una stringa che identifichi il valore di user e pc
+```
+button.addEventListener('click', function(){
+  const resultUser =  Math.floor(Math.random() * dadoUser.length );
+  const output = document.getElementById('val-user');
+  output.innerHTML ="il tuo dado:" + " " + dadoUser[resultUser];
+  
+  console.log(dadoUser);
+
+  const resultPc =  Math.floor(Math.random() * dadoPc.length );
+  const outputPc = document.getElementById('output');
+  outputPc.innerHTML ="Il dado del tuo avversario:" + " " +  dadoPc[resultPc];
+
+  
+})
+```
+.
+
+
+
