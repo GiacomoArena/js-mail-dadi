@@ -105,5 +105,20 @@ button.addEventListener('click', function(){
 ```
 .
 
+- tramite una condizione stabilire il vincitore e stampare il risultato a schermo
+```
+
+  if( resultUser > resultPc){
+    winner.innerHTML = `
+    Complimenti ${nome.value} hai vinto!
+    `;
+  }
+  else{
+    winner.innerHTML = `
+    Mi spiace ${nome.value} ma il PC ha avuto la meglio, ritenta se vuoi.
+    `;
+  }
+  ```
+
 
 
