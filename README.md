@@ -14,6 +14,20 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 -  chiedere la mail all'utente con un
 ```<input type="email">``` 
   e salvare il valore in una variabile. 
+  ```
+  const email = document.getElementById('email');
+  ```
+  .
   - creare un array contenente le email della lista di chi puó accedere 
+
+  ```
+  const arrayMail = [
+  "giacomo@gmail.com",
+  "giacomo@hotmail.com",
+  "giacomo@aruba.com",
+  "giacomo@hotmail.it",
+  "giacomo@outlook.com"
+];
+  ```
   - creare un button "invia" e creare un eventlistener che al "click"  invierá i dati forniti dall'utente
   - tramite una condizione e attraverso un metodo per gli array, controllare se il nome inserito dal nostro utente sia presente nella lista array e generare una risposta adeguata.
