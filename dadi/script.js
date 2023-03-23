@@ -21,9 +21,14 @@ button.addEventListener('click', function(){
     Complimenti ${nome.value} hai vinto!
     `;
   }
-  else{
+  else if(resultUser < resultPc){
     winner.innerHTML = `
     Mi spiace ${nome.value} ma il PC ha avuto la meglio, ritenta se vuoi.
+    `;
+  }
+  else{
+    winner.innerHTML = `
+    Hai pareggiato!!!
     `;
   }
 })
